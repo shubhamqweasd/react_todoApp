@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class App extends React.Component {
+//components
+import Header from './components/Header';
+import Content from './components/Content';
+
+class Layout extends React.Component {
    render() {
       return (
-         <div>
-            Hello World!!!
+         <div className="container">
+            <Header />
+            <Content />
          </div>
       );
    }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<Layout />, document.getElementById('app'));
